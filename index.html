@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maré — Activewear femenino</title>
+<meta name="description" content="Maré es una marca de ropa deportiva femenina: enterizos diseñados para moverte con comodidad, seguridad y estilo. Descubrí la colección y comprá directo por WhatsApp.">
+<meta name="theme-color" content="#211f1c">
+
+<!-- Open Graph (para cuando compartas el link en Instagram/TikTok) -->
+<meta property="og:title" content="Maré — Activewear femenino">
+<meta property="og:description" content="Ropa deportiva femenina. Cómoda, segura y con estilo.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/logo.png">
+
+<!-- Favicon: reemplazá images/favicon.ico por el tuyo (ver README) -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo" aria-label="Maré — inicio">
+      <!-- Para usar tu logo real en PNG, mirá la sección "LOGO" del README.
+           Reemplazá el bloque de abajo por: <img src="images/logo.png" alt="Maré" class="logo-img"> -->
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 24" width="30" height="15"><path d="M1 16 C 9 4, 15 4, 24 12 S 39 20, 47 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="logo-word">Maré</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#top" data-nav>Inicio</a>
+      <a href="#coleccion" data-nav>Colección</a>
+      <a href="#sobre" data-nav>Sobre Maré</a>
+      <a href="#contacto" data-nav>Contacto</a>
+    </nav>
+
+    <a class="nav-cta" href="#coleccion">Ver colección</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#top" data-nav>Inicio</a>
+    <a href="#coleccion" data-nav>Colección</a>
+    <a href="#sobre" data-nav>Sobre Maré</a>
+    <a href="#contacto" data-nav>Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Ropa deportiva femenina</p>
+      <h1 class="hero-title">Hay una marea<br>que no se detiene:<br><em>la tuya.</em></h1>
+      <p class="hero-sub">Activewear pensado para acompañar tu movimiento — con la comodidad, la seguridad y el estilo que tu entrenamiento merece.</p>
+      <a href="#coleccion" class="btn btn-primary">Ver colección</a>
+    </div>
+    <div class="hero-waves" aria-hidden="true">
+      <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+        <path class="wave wave-1" d="M-20 260 C 100 200, 200 200, 300 260 S 500 320, 620 240" fill="none" stroke-width="1.5"/>
+        <path class="wave wave-2" d="M-20 300 C 120 250, 220 250, 320 300 S 500 360, 620 290" fill="none" stroke-width="1.5"/>
+        <path class="wave wave-3" d="M-20 340 C 140 300, 240 300, 340 340 S 520 390, 620 330" fill="none" stroke-width="1.5"/>
+      </svg>
+      <div class="hero-photo-frame" data-label="Foto principal — modelo usando Maré">
+        <img src="images/hero.jpg" alt="Modelo usando ropa deportiva Maré" onerror="this.parentElement.classList.add('img-placeholder')">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COLECCIÓN ============ -->
+  <section class="coleccion" id="coleccion">
+    <div class="section-head">
+      <h2>La colección</h2>
+      <p>Dos piezas, pensadas para moverse con vos.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- PRODUCTO 1: ENTERIZO SHORT -->
+      <article class="product-card" data-product="short">
+        <div class="product-photo" data-label="Enterizo Short">
+          <img src="images/enterizo-short-negro.jpg" alt="Enterizo Short Maré, color negro" data-img onerror="this.parentElement.classList.add('img-placeholder')">
+        </div>
+        <div class="product-info">
+          <h3>Enterizo Short</h3>
+          <p class="product-price">₡15.000</p>
+          <p class="product-desc">Silueta entallada que acompaña cada movimiento, con la libertad del short.</p>
+
+          <p class="swatch-label">Color: <span data-color-name>Negro</span></p>
+          <div class="swatches" role="group" aria-label="Colores disponibles — Enterizo Short">
+            <button type="button" class="swatch" style="--swatch-color:#F4D9A0" data-color="Amarillo pastel" data-img="images/enterizo-short-amarillo.jpg" aria-label="Amarillo pastel"></button>
+            <button type="button" class="swatch" style="--swatch-color:#E7B9BE" data-color="Rosado" data-img="images/enterizo-short-rosado.jpg" aria-label="Rosado"></button>
+            <button type="button" class="swatch is-active" style="--swatch-color:#1E1C19" data-color="Negro" data-img="images/enterizo-short-negro.jpg" aria-label="Negro"></button>
+            <button type="button" class="swatch" style="--swatch-color:#7B5B45" data-color="Café" data-img="images/enterizo-short-cafe.jpg" aria-label="Café"></button>
+          </div>
+
+          <button type="button" class="btn btn-whatsapp" data-whatsapp data-product-name="Enterizo Short" data-price="₡15.000">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.83 14.24c-.24.68-1.4 1.33-1.93 1.4-.5.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.7-4.1-4.85-4.29-.14-.19-1.16-1.55-1.16-2.96s.73-2.1 1-2.39c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.32 2.38 1.47.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.75-.17 1.43z"/></svg>
+            Comprar por WhatsApp
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 2: ENTERIZO PANTALÓN -->
+      <article class="product-card" data-product="pantalon">
+        <div class="product-photo" data-label="Enterizo Pantalón">
+          <img src="images/enterizo-pantalon-negro.jpg" alt="Enterizo Pantalón Maré, color negro" data-img onerror="this.parentElement.classList.add('img-placeholder')">
+        </div>
+        <div class="product-info">
+          <h3>Enterizo Pantalón</h3>
+          <p class="product-price">₡18.000</p>
+          <p class="product-desc">Cobertura completa, tiro alto y calce que sostiene sin marcar de más.</p>
+
+          <p class="swatch-label">Color: <span data-color-name>Negro</span></p>
+          <div class="swatches" role="group" aria-label="Colores disponibles — Enterizo Pantalón">
+            <button type="button" class="swatch is-active" style="--swatch-color:#1E1C19" data-color="Negro" data-img="images/enterizo-pantalon-negro.jpg" aria-label="Negro"></button>
+            <button type="button" class="swatch" style="--swatch-color:#26344A" data-color="Azul oscuro" data-img="images/enterizo-pantalon-azul.jpg" aria-label="Azul oscuro"></button>
+            <button type="button" class="swatch" style="--swatch-color:#A9D3DE" data-color="Celeste" data-img="images/enterizo-pantalon-celeste.jpg" aria-label="Celeste"></button>
+          </div>
+
+          <button type="button" class="btn btn-whatsapp" data-whatsapp data-product-name="Enterizo Pantalón" data-price="₡18.000">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.83 14.24c-.24.68-1.4 1.33-1.93 1.4-.5.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.7-4.1-4.85-4.29-.14-.19-1.16-1.55-1.16-2.96s.73-2.1 1-2.39c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.32 2.38 1.47.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.75-.17 1.43z"/></svg>
+            Comprar por WhatsApp
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SOBRE MARÉ ============ -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-inner">
+      <p class="section-eyebrow">Sobre Maré</p>
+      <p class="sobre-text">Maré nace de una idea simple: entrenar no debería significar elegir entre sentirte cómoda o verte bien. Cada pieza está pensada para sostenerte, cubrirte donde importa y moverse exactamente como vos lo hacés — del gimnasio a la calle, sin perder tu esencia en el camino.</p>
+    </div>
+  </section>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="beneficios">
+    <div class="beneficio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M13 21c2 3 5 5 7 5s5-2 7-5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <h3>Comodidad</h3>
+      <p>Telas suaves que se mueven con vos, sin apretar ni marcar de más.</p>
+    </div>
+    <div class="beneficio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v10c0 9-6 15-13 17-7-2-13-8-13-17V9z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+      <h3>Seguridad</h3>
+      <p>Calce firme y cobertura pensada para que entrenes sin preocuparte.</p>
+    </div>
+    <div class="beneficio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 L24 16 L37 16 L26 24 L30 36 L20 28 L10 36 L14 24 L3 16 L16 16 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      <h3>Estilo</h3>
+      <p>Colores y siluetas en tendencia, para vestir tan bien como entrenás.</p>
+    </div>
+    <div class="beneficio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 20c3-8 8-14 14-14s11 6 14 14c-3 8-8 14-14 14S9 28 6 20z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+      <h3>Versatilidad</h3>
+      <p>Del gym al brunch: pensada para acompañarte durante todo el día.</p>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-final" id="contacto">
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none"><path d="M0 30 C 100 0, 200 60, 300 30 S 500 0, 600 30" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+    </div>
+    <h2>Encontrá la pieza que va con vos.</h2>
+    <a href="#" class="btn btn-whatsapp btn-lg" data-whatsapp data-product-name="la colección Maré" data-price="">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.83 14.24c-.24.68-1.4 1.33-1.93 1.4-.5.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.7-4.1-4.85-4.29-.14-.19-1.16-1.55-1.16-2.96s.73-2.1 1-2.39c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.32 2.38 1.47.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.75-.17 1.43z"/></svg>
+      Comprar por WhatsApp
+    </a>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-word">Maré</span>
+      <p>Activewear</p>
+    </div>
+    <div class="footer-links">
+      <a href="#" data-whatsapp-link target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Maré. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="#" class="whatsapp-float" data-whatsapp-link target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.83 14.24c-.24.68-1.4 1.33-1.93 1.4-.5.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.7-4.1-4.85-4.29-.14-.19-1.16-1.55-1.16-2.96s.73-2.1 1-2.39c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.32 2.38 1.47.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.75-.17 1.43z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
