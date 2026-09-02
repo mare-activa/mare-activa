@@ -1,0 +1,19 @@
+Esta carpeta debe contener estos archivos (los nombres deben ser EXACTOS,
+todo en minúscula, así como están escritos aquí):
+
+  logo.png                          -> tu logo (fondo transparente ideal)
+  favicon.ico                       -> ícono pequeño para la pestaña del navegador
+  hero.jpg                          -> foto principal de la portada
+  enterizo-short-amarillo.jpg
+  enterizo-short-rosado.jpg
+  enterizo-short-negro.jpg
+  enterizo-short-cafe.jpg
+  enterizo-pantalon-negro.jpg
+  enterizo-pantalon-azul.jpg
+  enterizo-pantalon-celeste.jpg
+
+Mientras una foto no exista, la página muestra automáticamente un
+placeholder elegante con el nombre del producto — no rompe el diseño.
+
+Este archivo (LEEME.txt) es solo informativo: podés borrarlo cuando
+subas tus fotos reales.
