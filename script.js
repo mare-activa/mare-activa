@@ -11,6 +11,20 @@ const WHATSAPP_NUMBER = "50600000000"; // TODO: reemplazar por tu número real
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ---------- Video del hero: placeholder si images/hero.mp4 no existe todavía ---------- */
+  const heroVideo = document.querySelector('.hero-photo-frame video');
+  if (heroVideo) {
+    heroVideo.addEventListener('error', () => {
+      heroVideo.parentElement.classList.add('img-placeholder');
+    }, true);
+    // Si a los 2 segundos no cargó ningún dato, asumimos que el archivo no existe aún
+    setTimeout(() => {
+      if (heroVideo.readyState === 0) {
+        heroVideo.parentElement.classList.add('img-placeholder');
+      }
+    }, 2000);
+  }
+
   /* ---------- Menú móvil ---------- */
   const menuToggle = document.getElementById('menu-toggle');
   const mobileNav = document.getElementById('mobile-nav');
