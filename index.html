@@ -74,8 +74,14 @@
         <path class="wave wave-2" d="M-20 300 C 120 250, 220 250, 320 300 S 500 360, 620 290" fill="none" stroke-width="1.5"/>
         <path class="wave wave-3" d="M-20 340 C 140 300, 240 300, 340 340 S 520 390, 620 330" fill="none" stroke-width="1.5"/>
       </svg>
-      <div class="hero-photo-frame" data-label="Foto principal — modelo usando Maré">
-        <img src="images/hero.jpg" alt="Modelo usando ropa deportiva Maré" onerror="this.parentElement.classList.add('img-placeholder')">
+      <div class="hero-photo-frame" data-label="Video principal — modelo usando Maré">
+        <!-- Video de portada: autoplay, sin sonido, en loop. Reemplazá images/hero.mp4 por tu video.
+             Si preferís una foto en vez de video, mirá la sección "PORTADA" del README. -->
+        <video autoplay muted loop playsinline preload="auto"
+               poster="images/hero.jpg"
+               aria-label="Video de modelo usando ropa deportiva Maré">
+          <source src="images/hero.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </section>
